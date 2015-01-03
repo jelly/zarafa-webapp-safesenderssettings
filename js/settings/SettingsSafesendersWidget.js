@@ -68,15 +68,6 @@ Zarafa.plugins.safesenders.SettingsSafesendersWidget = Ext.extend(Zarafa.setting
 	},
 
 	/**
-	 * Initialize events for the panel.
-	 * @private
-	 */
-	initEvents : function()
-	{
-		Zarafa.plugins.safesenders.SettingsSafesendersWidget.superclass.initEvents.call(this);
-	},
-
-	/**
 	 * Event handler which is fired when the 'Delete' button has been pressed. This
 	 * will get the selected {@link Ext.data.Record record}
 	 * and {@link Ext.data.Store#remove remove} it.
@@ -90,7 +81,6 @@ Zarafa.plugins.safesenders.SettingsSafesendersWidget = Ext.extend(Zarafa.setting
 			this.safesendersGrid.getStore().remove(record);
 			this.model.set(this.safesendersGrid.name, this.getSafesenders());
 		}
-
 	},
 
 	/**
@@ -119,15 +109,12 @@ Zarafa.plugins.safesenders.SettingsSafesendersWidget = Ext.extend(Zarafa.setting
 	update : function(settingsModel)
 	{
 		this.model = settingsModel;
-
-		// Convert the send as into Store data
 		var safesenders = settingsModel.get(this.safesendersGrid.name, true);
 
-		// Load all signatures into the GridPanel
+		// Load all safesenders into the GridPanel
 		var array = []
 		Ext.each(safesenders, function(item, index) {
-			 //array.push({name: item, id: index}); // do we need the id?
-			 array.push({name: item}); // do we need the id?
+			 array.push({name: item});
 		});
 
 		var store = this.safesendersGrid.getStore();
