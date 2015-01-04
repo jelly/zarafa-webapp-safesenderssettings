@@ -17,6 +17,7 @@
 					<clientfile load="debug">js/safesenders-debug.js</clientfile>
 					<clientfile load="source">js/SafeSenders.js</clientfile>
 					<clientfile load="source">js/settings/SettingsSafesendersWidget.js</clientfile>
+					<clientfile load="source">js/ABOUT.js</clientfile>
 				</client>
 			</files>
 		</component>

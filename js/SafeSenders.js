@@ -33,6 +33,7 @@ Zarafa.onReady(function() {
 	container.registerPlugin(new Zarafa.core.PluginMetaData({
 		name : 'safesenders',
 		displayName : _('Safesender settingswidget'),
-		pluginConstructor : Zarafa.plugins.safesenders.SafeSenders
+		pluginConstructor : Zarafa.plugins.safesenders.SafeSenders,
+		about : Zarafa.plugins.safesenders.ABOUT,
 	}));
 });
