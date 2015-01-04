@@ -34,6 +34,6 @@ Zarafa.onReady(function() {
 		name : 'safesenders',
 		displayName : _('Safesender settingswidget'),
 		pluginConstructor : Zarafa.plugins.safesenders.SafeSenders,
-		about : Zarafa.plugins.safesenders.ABOUT,
+		about : Zarafa.plugins.safesenders.ABOUT
 	}));
 });
