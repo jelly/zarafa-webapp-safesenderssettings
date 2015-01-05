@@ -11,3 +11,8 @@ Install
 3. Give read permissions to apache for /plugins/safesenders directory
 4. Restart apache, reload webapp.
 
+Screenshot
+----------
+
+![](http://dedi.vdwaa.nl/safesenders.png "Safe senders widget")
+
